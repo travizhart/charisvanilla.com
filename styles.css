@@ -262,3 +262,7 @@ section[id],article[id]{scroll-margin-top:150px}
 @media (max-width:360px){.brand-text strong{font-size:.88rem;letter-spacing:.1em}}
 @media (min-width:760px){.brand-text strong{font-size:1.45rem;letter-spacing:.16em}}
 .gift-ctas{display:flex;flex-wrap:wrap;gap:14px}
+.ship-note{text-align:center;margin:0 auto 20px;font-size:.95rem;color:var(--muted)}
+.buy-prices{margin:0 0 10px;font-weight:600}
+.buy .buy-now{width:100%}
+.order-help{text-align:center}.order-help p{margin:4px 0}
