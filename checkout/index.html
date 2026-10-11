@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout | Charis Vanilla Co.</title>
+<meta name="description" content="Checkout for Charis Vanilla Co. pure vanilla and coffee extracts.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#3b2618">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Charis Vanilla Co. | Pure Vanilla &amp; Coffee Extracts">
+<meta property="og:description" content="Small-batch pure Madagascar vanilla and coffee extracts. Grace in every drop.">
+<link rel="canonical" href="https://charisvanilla.com/checkout/">
+<meta property="og:url" content="https://charisvanilla.com/checkout/">
+<meta property="og:image" content="https://charisvanilla.com/img/og-v4.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=19">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="../#top" aria-label="Charis Vanilla Co., home">
+      <img class="brand-mark" src="../img/monogram.png" alt="" width="44" height="44">
+      <span class="brand-text"><strong>Charis Vanilla Co.</strong><small>Pure extracts</small></span>
+    </a>
+    <button class="cart-btn" type="button" aria-label="Open cart" data-cart-open><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M6 7h13l-1.4 8.2a2 2 0 0 1-2 1.8H9.4a2 2 0 0 1-2-1.7L5.6 4H3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20.5" r="1.3" fill="currentColor"/><circle cx="16" cy="20.5" r="1.3" fill="currentColor"/></svg><span class="cart-count" data-cart-count hidden>0</span></button>
+    <nav class="nav" aria-label="Main">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list"><span class="sr-only">Menu</span><span class="bars" aria-hidden="true"></span></button>
+      <ul id="nav-list">
+        <li><a href="../#extracts">Extracts</a></li>
+        <li><a href="../#gifts">Gift bags</a></li>
+        <li><a href="../how-its-made/">How it's made</a></li>
+        <li><a href="../#smell-test">Smell test</a></li>
+        <li><a href="../#story">Our story</a></li>
+        <li><a href="../#markets">Markets</a></li>
+        <li><a class="nav-cta" href="../#extracts">Shop</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap site-search">
+    <form role="search" id="site-search" autocomplete="off">
+      <label for="q" class="sr-only">Search the site</label>
+      <input id="q" type="search" placeholder="Search vanilla, coffee, gift bags, markets…" enterkeyhint="search">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+    <p id="search-msg" class="search-msg" role="status" aria-live="polite"></p>
+  </div>
+</header>
+
+<main id="main" class="co-main">
+<div class="wrap">
+  <header class="section-head"><p class="eyebrow">Checkout</p><h2 id="co-title">Your order</h2></header>
+  <p class="co-empty" hidden>Your cart is empty. <a href="../#extracts">Shop the extracts</a>.</p>
+  <div class="co-grid" id="co-grid">
+    <form class="co-form" id="co-form" novalidate>
+      <section class="co-card">
+        <h2>Contact</h2>
+        <label>Full name<input type="text" name="name" autocomplete="name" required></label>
+        <label>Email<input type="email" name="email" autocomplete="email" required></label>
+        <label>Phone<input type="tel" name="phone" autocomplete="tel" required></label>
+      </section>
+      <section class="co-card">
+        <h2>Delivery</h2>
+        <div class="co-opts" role="radiogroup" aria-label="Delivery method">
+          <label class="co-opt"><input type="radio" name="method" value="pickup" checked><span><strong>Free pickup at a market</strong><small>Pick up at the Charis Vanilla Co. table</small></span></label>
+          <label class="co-opt"><input type="radio" name="method" value="shipping"><span><strong>Ship to me</strong><small>$8 flat, free on orders $40+</small></span></label>
+        </div>
+        <div id="co-pickup">
+          <p class="eyebrow">Choose your market</p>
+          <div class="co-opts">
+            <label class="co-opt"><input type="radio" name="market" value="hickory"><span><strong>Downtown Hickory Farmers Market</strong><small>Wednesdays, 10:00 AM to 1:00 PM</small></span></label>
+            <label class="co-opt"><input type="radio" name="market" value="lake-norman"><span><strong>Lake Norman Farmers Market, Denver NC</strong><small>Pursuit Church parking lot · Saturdays, 8:00 AM to 12:00 PM</small></span></label>
+          </div>
+        </div>
+        <div id="co-ship" hidden>
+          <label>Street address<input type="text" name="line1" autocomplete="address-line1"></label>
+          <label>Apt, suite (optional)<input type="text" name="line2" autocomplete="address-line2"></label>
+          <label>City<input type="text" name="city" autocomplete="address-level2"></label>
+          <div class="co-row">
+            <label>State<input type="text" name="state" autocomplete="address-level1" maxlength="2" placeholder="NC"></label>
+            <label>ZIP<input type="text" name="zip" autocomplete="postal-code" inputmode="numeric" maxlength="10"></label>
+          </div>
+        </div>
+      </section>
+      <section class="co-card">
+        <h2>Payment</h2>
+        <p class="co-mock" id="co-mock" hidden></p>
+        <div class="co-wallets"><div id="apple-pay" hidden></div><div id="google-pay"></div></div>
+        <div id="card-container"></div>
+        <p class="co-err" id="co-err" role="alert"></p>
+        <button class="btn btn-primary co-pay" id="co-pay" type="submit">Pay</button>
+        <p class="co-note">Payments are processed securely by Square. Card details never touch our site.</p>
+      </section>
+    </form>
+    <aside class="co-card co-summary" aria-labelledby="sum-title">
+      <h2 id="sum-title">Order summary</h2>
+      <ul class="co-sum-lines" id="co-lines"></ul>
+      <p class="co-tot"><span>Subtotal</span><span id="co-sub"></span></p>
+      <p class="co-tot"><span>Shipping</span><span id="co-shipamt"></span></p>
+      <p class="co-tot"><span id="co-taxlabel">NC sales tax</span><span id="co-tax"></span></p>
+      <p class="co-tot co-grand"><span>Total</span><span id="co-total"></span></p>
+      <p class="co-note"><a href="#" data-cart-open>Edit cart</a></p>
+    </aside>
+  </div>
+  <section class="co-done" id="co-done" hidden tabindex="-1">
+    <div class="tick" aria-hidden="true">✓</div>
+    <h2>Thank you! Your order is in.</h2>
+    <p id="done-ref"></p>
+    <div class="co-card" style="text-align:left"><ul class="co-sum-lines" id="done-lines"></ul><div id="done-tots"></div><p id="done-ful"></p></div>
+    <p class="co-note">A receipt is on its way to <strong id="done-email"></strong>. Questions? Email <a href="mailto:hello@charisvanilla.com">hello@charisvanilla.com</a>.</p>
+    <p id="done-receipt"></p>
+    <a class="btn btn-ghost" href="../">Back to the shop</a>
+  </section>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="foot-brand"><img src="../img/logo-light.png" alt="Charis Vanilla Co. logo" width="160" height="111" style="width:160px;height:auto"><div><strong>Charis Vanilla Co.</strong><span>Charis Extracts · grace in every drop</span></div></div>
+    <nav aria-label="Footer"><a href="../#extracts">Extracts</a><a href="../#gifts">Gift bags</a><a href="../#markets">Markets</a><a href="../#order">Contact</a></nav>
+    <p class="foot-contact"><a href="mailto:hello@charisvanilla.com">hello@charisvanilla.com</a> · <a href="https://www.instagram.com/charisvanillaco/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/search/top?q=Charis%20Vanilla%20Co." target="_blank" rel="noopener">Facebook</a></p>
+  </div>
+</footer>
+<script src="../app.js?v=14" defer></script>
+<script src="../cart.js?v=1" defer></script>
+<script src="config.js?v=1" defer></script>
+<script src="checkout.js?v=1" defer></script>
+</body>
+</html>

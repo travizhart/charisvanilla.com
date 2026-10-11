@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&family=Montserrat:wght@600&family=Waterfall&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="img/hero-sm-v5.webp" imagesrcset="img/hero-sm-v5.webp 800w, img/hero-v5.webp 1600w" imagesizes="(min-width: 900px) 50vw, 100vw">
-<link rel="stylesheet" href="styles.css?v=18">
+<link rel="stylesheet" href="styles.css?v=19">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Store","name":"Charis Vanilla Co.","slogan":"Grace in every drop","email":"hello@charisvanilla.com",
  "sameAs":["https://www.instagram.com/charisvanillaco/"],
@@ -39,6 +39,7 @@
       <img class="brand-mark" src="img/monogram.png" alt="" width="44" height="44">
       <span class="brand-text"><strong>Charis Vanilla Co.</strong><small>Pure extracts</small></span>
     </a>
+    <button class="cart-btn" type="button" aria-label="Open cart" data-cart-open><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M6 7h13l-1.4 8.2a2 2 0 0 1-2 1.8H9.4a2 2 0 0 1-2-1.7L5.6 4H3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20.5" r="1.3" fill="currentColor"/><circle cx="16" cy="20.5" r="1.3" fill="currentColor"/></svg><span class="cart-count" data-cart-count hidden>0</span></button>
     <nav class="nav" aria-label="Main">
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list"><span class="sr-only">Menu</span><span class="bars" aria-hidden="true"></span></button>
       <ul id="nav-list">
@@ -105,9 +106,13 @@
         </dl>
         <p class="fine">Grade B is often called "extract grade". These beans hold less moisture than the plump Grade A beans sold for cooking, so extract makers often choose them.</p>
         <div class="buy" data-product="vanilla">
-          <p class="buy-prices">2 oz · $10 &nbsp;|&nbsp; 4 oz · $18</p>
-          <a class="btn btn-primary buy-now" href="https://square.link/u/yhp7fXhi">Buy vanilla extract</a>
-          <p class="buy-msg">Choose your size at checkout.</p>
+          <div class="size-pick" role="radiogroup" aria-label="Pure Vanilla Extract size">
+            <label><input type="radio" name="size-vanilla" value="2" checked><span>2 oz · $10</span></label>
+            <label><input type="radio" name="size-vanilla" value="4"><span>4 oz · $18</span></label>
+          </div>
+          <label class="qty">Qty <input type="number" min="1" max="20" value="1" inputmode="numeric" aria-label="Pure Vanilla Extract quantity"></label>
+          <button type="button" class="btn btn-primary add-cart">Add to cart</button>
+          <p class="buy-msg" role="status"></p>
         </div>
     </article>
     <article class="label-panel pcard" id="coffee">
@@ -121,9 +126,13 @@
         </dl>
         <p class="fine">A deep coffee flavor for tiramisu, mocha frosting, chocolate cake and ice cream.</p>
         <div class="buy" data-product="coffee">
-          <p class="buy-prices">2 oz · $10 &nbsp;|&nbsp; 4 oz · $18</p>
-          <a class="btn btn-primary buy-now" href="https://square.link/u/EbTazbtc">Buy coffee extract</a>
-          <p class="buy-msg">Choose your size at checkout.</p>
+          <div class="size-pick" role="radiogroup" aria-label="Coffee Extract size">
+            <label><input type="radio" name="size-coffee" value="2" checked><span>2 oz · $10</span></label>
+            <label><input type="radio" name="size-coffee" value="4"><span>4 oz · $18</span></label>
+          </div>
+          <label class="qty">Qty <input type="number" min="1" max="20" value="1" inputmode="numeric" aria-label="Coffee Extract quantity"></label>
+          <button type="button" class="btn btn-primary add-cart">Add to cart</button>
+          <p class="buy-msg" role="status"></p>
         </div>
     </article>
     </div>
@@ -146,7 +155,7 @@
         <li><span class="num">3</span><div><strong>A teaspoon</strong><small>To measure the vanilla</small></div></li>
       </ul>
       <p><strong>$12 gift bag:</strong> 2 oz vanilla extract, cookie recipe card and teaspoon.<br><strong>$20 gift bag:</strong> 4 oz vanilla extract, cookie recipe card and teaspoon.</p>
-      <div class="gift-ctas"><a class="btn btn-primary" href="https://square.link/u/IHq2WOyb">Buy a $12 gift bag</a> <a class="btn btn-primary" href="https://square.link/u/IHq2WOyb">Buy a $20 gift bag</a></div>
+      <div class="gift-ctas"><button type="button" class="btn btn-primary" data-add-sku="gift-12">Add $12 gift bag to cart</button> <button type="button" class="btn btn-primary" data-add-sku="gift-20">Add $20 gift bag to cart</button></div>
     </div>
   </div>
 </section>
@@ -233,6 +242,7 @@
     <p class="foot-contact"><a href="mailto:hello@charisvanilla.com">hello@charisvanilla.com</a> · <a href="https://www.instagram.com/charisvanillaco/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/search/top?q=Charis%20Vanilla%20Co." target="_blank" rel="noopener">Facebook</a></p>
   </div>
 </footer>
-<script src="app.js?v=13" defer></script>
+<script src="app.js?v=14" defer></script>
+<script src="cart.js?v=1" defer></script>
 </body>
 </html>
