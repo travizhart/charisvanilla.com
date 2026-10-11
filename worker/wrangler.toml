@@ -5,9 +5,9 @@ workers_dev = true
 account_id = "754cc18440f5ef7ed7484fdf95876aa1"
 
 [vars]
-SQUARE_ENV = "sandbox"            # change to "production" when going live
+SQUARE_ENV = "production"            # change to "production" when going live
 TAX_RATE_PERCENT = "2"         # NC sales tax %, NC pickups/shipments only. 2 = NC food rate, pending accountant.
-ALLOWED_ORIGINS = "https://charisvanilla.com,https://www.charisvanilla.com,https://travizhart.github.io"  # TEMP: remove travizhart.github.io after the test
+ALLOWED_ORIGINS = "https://charisvanilla.com,https://www.charisvanilla.com"
 # Order notification email (optional, uses Cloudflare Email Routing; NOTIFY_TO must be a
 # verified destination address in Email Routing, e.g. the gmail that hello@ forwards to).
 # NOTIFY_FROM = "orders@charisvanilla.com"
