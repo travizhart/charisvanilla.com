@@ -15,7 +15,7 @@ git checkout cart-checkout && git pull -q --ff-only
 
 echo "1/6 Check the production token can see the main location (read-only)"
 curl -fsS https://connect.squareup.com/v2/locations/$PROD_LOCATION \
-  -H "Authorization: Bearer $SQUARE_SANDBOX_ACCESS_TOKEN" -H "Square-Version: 2025-01-23" | grep -q '"status":"ACTIVE"' \
+  -H "Authorization: Bearer $SQUARE_SANDBOX_ACCESS_TOKEN" -H "Square-Version: 2025-01-23" | grep -Eq '"status": *"ACTIVE"' \
   || { echo "Production token/location check failed"; exit 1; }
 
 echo "2/6 Worker vars: production, charisvanilla.com origins only"
