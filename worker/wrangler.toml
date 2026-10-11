@@ -1,0 +1,22 @@
+name = "charis-checkout"
+main = "src/index.js"
+compatibility_date = "2025-07-18"
+workers_dev = true
+account_id = "754cc18440f5ef7ed7484fdf95876aa1"
+
+[vars]
+SQUARE_ENV = "production"            # change to "production" when going live
+TAX_RATE_PERCENT = "2"         # NC sales tax %, NC pickups/shipments only. 2 = NC food rate, pending accountant.
+ALLOWED_ORIGINS = "https://charisvanilla.com,https://www.charisvanilla.com"
+# Order notification email (optional, uses Cloudflare Email Routing; NOTIFY_TO must be a
+# verified destination address in Email Routing, e.g. the gmail that hello@ forwards to).
+# NOTIFY_FROM = "orders@charisvanilla.com"
+# NOTIFY_TO = "charischerishables@gmail.com"
+
+# [[send_email]]
+# name = "ORDER_EMAIL"
+# destination_address = "charischerishables@gmail.com"
+
+# Secrets (never in this file):
+#   npx wrangler secret put SQUARE_ACCESS_TOKEN
+#   npx wrangler secret put SQUARE_LOCATION_ID   (sandbox L95W9WZBSP351, production main LYH7H3N7B2R57)
