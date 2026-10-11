@@ -33,7 +33,7 @@ f.addEventListener('submit',e=>{e.preventDefault();msg.classList.remove('err');
  if(!items.length){msg.textContent='Add at least one bottle or gift bag first.';msg.classList.add('err');return}
  if(!name||!reach){msg.textContent='Please add your name and a phone number or email so we can reply.';msg.classList.add('err');return}
  const body=`Hi Charis Vanilla Co.,\n\nI'd like to request:\n${items.join('\n')}\n\nEstimated total: $${calc()}\n\nName: ${name}\nPhone/email: ${reach}${notes?'\nNotes: '+notes:''}\n\nThank you!`;
- location.href='mailto:charischerishables@gmail.com?subject='+encodeURIComponent('Order request from '+name)+'&body='+encodeURIComponent(body);
+ location.href='mailto:hello@charisvanilla.com?subject='+encodeURIComponent('Order request from '+name)+'&body='+encodeURIComponent(body);
  msg.textContent='Your email app should open with the order written out. Press send there to finish.';
 });
 })();
